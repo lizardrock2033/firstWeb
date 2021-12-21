@@ -385,3 +385,34 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Feauture */
+.section--feauture {
+    background: url(../images/feauture/feauture_background.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    padding-bottom: 0;
+}
+
+.feauture__devices {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item {
+    display: block;
+}
+
+.devices__item--ipad {
+    position: relative;
+    left: 70px;
+}
+
+.devices__item--iphone {
+    position: absolute;
+    bottom: -95px;
+    right: 0;
+    z-index: 1;
+}
