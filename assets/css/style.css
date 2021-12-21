@@ -16,6 +16,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 40px 0;
+
+    background-color: #e5e5e5;
+    border: 0;
+}
+
 /* Container */
 .container {
     width: 100%;
@@ -214,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 .section__header {
     width: 100%;
     max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto 60px;
 
     text-align: center;
 }
@@ -249,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About */
 .about {
-    margin-top: 100px;
+    margin-top: 70px;
 
     display: flex;
     justify-content: space-between;
@@ -341,3 +351,37 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+/* Services */
+.services {
+    display: flex;
+}
+
+.services__item {
+    flex: 1 1 0;
+    position: relative;
+    padding-left: 85px;
+    padding-right: 35px;
+}
+
+.services__icon {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    z-index: 1;
+}
+
+.services__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services__text {
+    font-size: 15px;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+}
+
