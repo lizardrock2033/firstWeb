@@ -319,10 +319,10 @@ hr {
     opacity: 0;
 
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 45%;
+    left: 48%;
     z-index: 2;
-    transform: translate3d(0, -50%, 0);
+    transform: translate3d(-52%, -55%, 0);
 
     transition: opacity .2s linear;
 }
@@ -624,9 +624,55 @@ hr {
     opacity: .1;
 }
 
+.team__person:hover .person__contacts {
+    opacity: 1;
+}
+
 .person__photo img {
     display: block;
     transition: opacity .1s linear;
+}
+
+.person__contacts {
+    display: flex;
+
+    height: 56px;
+    width: 224px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    z-index: 2;
+    transform: translate3d(-52%, -55%, 0);
+
+    transition: opacity .2s linear;
+}
+
+.contacts__item {
+    height: 56px;
+    width: 56px;
+
+    border-right: 1px solid #f38181;
+}
+
+.contacts__item:hover {
+    background-color: #f38181;
+}
+
+.contacts__item:last-child {
+    border-right: 0;
+}
+
+.contacts__item img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .team__text {
@@ -648,4 +694,23 @@ hr {
     font-style: italic;
     font-weight: 300;
     color: #999;
+}
+
+/* Logos */
+.logos {
+    height: 250px;
+
+    background-color: #f8f8f8;
+}
+
+.logos__img img {
+    display: block;
+    margin: 0 auto;
+
+    position: relative;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0, 50%, 0);
 }
