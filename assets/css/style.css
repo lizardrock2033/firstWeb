@@ -606,25 +606,25 @@ hr {
     position: relative;
 }
 
-.team__contact {
+.team__person {
     background-color: #95e1d3;
 }
 
-.team__img {
+.person__photo {
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
     transition: transform .2s linear;
 }
 
-.team__contact:hover .team__img {
+.team__person:hover .person__photo {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.team__contact:hover .team__img img{
+.team__person:hover .person__photo img{
     opacity: .1;
 }
 
-.team__img img {
+.person__photo img {
     display: block;
     transition: opacity .1s linear;
 }
@@ -635,14 +635,14 @@ hr {
     text-align: center;
 }
 
-.team__name {
+.person__name {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     color: #333;
 }
 
-.team__position {
+.person__position {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: italic;
