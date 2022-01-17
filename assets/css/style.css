@@ -234,6 +234,12 @@ hr {
     background-color: #f8f8f8;
 }
 
+.section--clients {
+    background: url("../images/intro_02.png") no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
 .section__header {
     width: 100%;
     max-width: 950px;
@@ -792,4 +798,61 @@ hr {
 .works__pic {
     display: block;
     margin: 0 auto;
+}
+
+/* Clients */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 100px;
+}
+
+.clients__item {
+    width: 50%;
+
+    position: relative;
+
+    margin-bottom: 80px;
+    padding: 0 45px 0 175px;
+}
+
+.clients__img {
+    position: absolute;
+
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__name {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 3px;
+}
+
+.clients__position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.clients__position:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.clients__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
 }
