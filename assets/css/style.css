@@ -1004,3 +1004,28 @@ hr {
 
     margin: 20px auto;
 }
+
+/* Footer */
+.footer {
+    display: flex;
+}
+
+.footer__column {
+    width: 33%;
+}
+
+.footer__logo {
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc;
+}
+
+.footer__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+.footer__followers {
+    display: flex;
+}
