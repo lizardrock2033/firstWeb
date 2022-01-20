@@ -623,18 +623,18 @@
         <div class="container">
             <div class="footer">
 
-                <div class="footer__column">
+                <div class="footer__column footer__column--social">
 
                     <div class="footer__logo">MoGo</div>
-                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
 
                     <div class="footer__followers">
                         <b>15k</b>followers
                     </div>
-                    
+
                     <div class="footer__social">
                         <div class="footer__followus">Follow Us:</div>
                         <a href="#">
@@ -663,16 +663,15 @@
                         </a>
                     </div>
 
-                    <div class="footer__subscribe">
-                        <div class="ss__area">
-                            <div class="ss__email">Your Email...</div>
-                        </div>
-                        <a href="#" class="ss__btn">subscribe</a>
-                    </div>
+                    <form class="footer__subscribe" action="/" method="post">
+                        <input class="ss__input" type="email" name="name" placeholder="Your Email..."></input>
+                        <button class="ss__btn" type="submit">subscribe</button>
+                    </form>
 
-                </div><!--/.footer__column-->
+                </div>
+                <!--/.footer__column-->
 
-                <div class="footer__column">
+                <div class="footer__column footer__column--blogs">
                     <div class="footer__title">blogs</div>
                     <div class="footer__blogs">
 
@@ -681,7 +680,7 @@
                                 <img class="footer__blogPhoto" src="assets/images/footer/blog/1.png" alt=""></img>
                             </a>
                             <div class="footer__blogInfo">
-                                <a href="#" class="footer__blogTitle" target="_blank">Lorem ipsum dolor sit amet, 
+                                <a href="#" class="footer__blogTitle" target="_blank">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing</a>
                                 <div class="footer__blogDate">Jan 9, 2016</div>
                             </div>
@@ -692,7 +691,7 @@
                                 <img class="footer__blogPhoto" src="assets/images/footer/blog/2.png" alt=""></img>
                             </a>
                             <div class="footer__blogInfo">
-                                <a href="#" class="footer__blogTitle" target="_blank">Consectetur adipiscing elit, 
+                                <a href="#" class="footer__blogTitle" target="_blank">Consectetur adipiscing elit,
                                     sed do eiusmod tempor</a>
                                 <div class="footer__blogDate">Jan 7, 2016</div>
                             </div>
@@ -703,53 +702,72 @@
                                 <img class="footer__blogPhoto" src="assets/images/footer/blog/3.png" alt=""></img>
                             </a>
                             <div class="footer__blogInfo">
-                                <a href="#" class="footer__blogTitle" target="_blank">Sed do eiusmod tempor 
+                                <a href="#" class="footer__blogTitle" target="_blank">Sed do eiusmod tempor
                                     incididunt ut labore</a>
                                 <div class="footer__blogDate">Jan 3, 2016</div>
                             </div>
                         </div>
 
                     </div>
-                </div><!--/.footer__column-->
+                    <!--/.footer__blogs-->
+                </div>
+                <!--/.footer__column-->
 
-                <div class="footer__column">
+                <div class="footer__column footer__column--instagram">
                     <div class="footer__title">instagram</div>
 
                     <div class="footer__instagram">
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/1.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/2.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/3.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/4.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/5.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/6.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/7.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/8.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="footer__instPhoto" src="assets/images/footer/instagram/9.png" alt="">
-                        </a>
+                        <div class="footer__instItem">
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/1.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/2.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="footer__instItem">
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/4.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/5.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="footer__instItem">
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/7.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/8.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="footer__instPhoto" src="assets/images/footer/instagram/9.png" alt="">
+                            </a>
+                        </div>
                     </div>
+                    <!--/.footer__instagram-->
 
                     <a href="#" class="footer__more" target="_blank">View more photos</a>
-                </div><!--/.footer__column-->
+                </div>
+                <!--/.footer__column-->
 
-            </div><!--/.footer-->
-        </div><!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="copyright">
+                © 2016 MoGo free PSD template by <span>Laaqiq</span>
+            </div>
+
+        </div>
+        <!--/.container-->
     </section>
 
 </body>

@@ -1014,10 +1014,24 @@ hr {
     display: flex;
 
     justify-content: space-between;
+
+    margin-bottom: 70px;
 }
 
 .footer__column {
     width: 100%;
+}
+
+.footer__column--social {
+    width: 40%;
+}
+
+.footer__column--blogs {
+    width: 29%;
+}
+
+.footer__column--instagram {
+    width: 22%;
 }
 
 .footer__title {
@@ -1036,7 +1050,7 @@ hr {
     color: #ccc;
     line-height: 1;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer__text {
@@ -1044,7 +1058,7 @@ hr {
     font-size: 15px;
     color: #cccccc;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .footer__followers {
@@ -1089,45 +1103,151 @@ hr {
 .footer__subscribe {
     display: flex;
 
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-.ss__area {
+.ss__input {
     width: 230px;
     height: 40px;
 
     background-color: #fff;
     border: 1px solid #e5e5e5;
+    border-right: 0;
 
-    position: relative;
-}
-
-.ss__email {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: 15px;
-    color: #d9d9d9;
-
-    position: absolute;
-    top: 50%;
-
-    transform: translate(0, -50%);
+    font-weight: 300;
+    color: #333;
 
     padding-left: 15px;
 }
 
-.ss__btn {
-    background-color: #95e1d3;
+.ss__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ccc;
+}
 
-    padding: 8px 35px;
+.ss__input:focus {
+    outline: none;
+    border-color: #95e1d3;
+}
+
+.ss__btn {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    border: 0;
+    cursor: pointer;
 
     font-size: 14px;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
+}
+
+.ss__btn:focus {
+    outline: none;
+}
+
+/* Footer blogs */
+.footer__blogs {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__blogItem {
+    display: flex;
+
+    margin-bottom: 25px;
+}
+
+.footer__blogInfo {
+    margin-left: 20px;
+}
+
+.footer__blogTitle {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
+    color: #333;
+    line-height: 1.3;
+}
+
+.footer__blogTitle:hover {
+    text-decoration: underline;
+}
+
+.footer__blogDate {
+    font-family: 'Robot', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #b1b1b1;
+}
+
+/* Footer instagram */
+.footer__instagram {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__instItem {
+    display: flex;
+
+    margin-bottom: 2px;
+}
+
+.footer__instItem:last-child {
+    margin-bottom: 15px;
+}
+
+.footer__instPhoto {
+    display: block;
+
+    margin-right: 2px;
+}
+
+.footer__instPhoto a:last-child {
+    margin-right: 0;
+}
+
+.footer__more {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #646464;
+
+    text-decoration: none;
+}
+
+.footer__more:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 
     text-align: center;
 }
 
-/* Footer blogs */
+.copyright span {
+    color: #f49797;
+}
+
+.copyright:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1200px;
+    background-color: #e5e5e5;
+
+    margin-bottom: 25px;
+}
