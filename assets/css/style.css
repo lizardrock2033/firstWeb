@@ -437,6 +437,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item--ipad {
@@ -454,10 +456,19 @@ h1, h2, h3, h4, h5, h6 {
 /* We do */
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item {
-    width: 100%;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Accordion */
@@ -629,20 +640,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Team */
 .team {
-    margin-top: 90px;
+    margin: 90px -15px 0 -15px;
 
-    width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .team__item {
-    width: 380px;
+    width: 33.33333%;
+    max-width: 410px;
 
-    position: relative;
+    padding: 0 15px;
 }
 
 .team__person {
+    position: relative;
+
     background-color: #95e1d3;
 }
 
@@ -666,6 +680,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .person__photo img {
     display: block;
+    width: 100%;
+    height: auto;
+    
     transition: opacity .1s linear;
 }
 
@@ -1333,6 +1350,10 @@ h1, h2, h3, h4, h5, h6 {
         padding: 40px 0;
     }
 
+    .section--feauture {
+        padding-bottom: 0;
+    }
+
     /* About */
     .about {
         margin-top: 40px;
@@ -1351,7 +1372,47 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* Services */
+    .services {
+        justify-content: center;
+    }
+
     .services__item {
+        width: 100%;
+        max-width: 400px;
+
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+    /* Feauture */
+    .devices__item--iphone {
+        bottom: -70px;
+        right: 0;
+    }
+
+    .devices__item--ipad {
+        left: 35px;
+    }
+
+    /* We do */
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
+    }
+
+    /* Team */
+    .team {
+        justify-content: center;
+    }
+
+    .team__item {
         width: 100%;
     }
 }
@@ -1401,9 +1462,26 @@ h1, h2, h3, h4, h5, h6 {
     /* Services */
     .services__item {
         margin-bottom: 20px;
+
     }
 
     .services__item--border {
         padding-bottom: 20px;
+    }
+
+    /* Feauture */
+    .feauture__devices {
+        max-width: 320px;
+    }
+
+    .devices__item--iphone {
+        width: 180px;
+
+        bottom: -40px;
+        right: -70px;
+    }
+
+    .devices__item--ipad {
+        left: -35px;
     }
 }
